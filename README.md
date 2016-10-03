@@ -1,2 +1,2 @@
-# new-york-times-slevomat
+# new-york-times
 sec
