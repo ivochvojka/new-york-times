@@ -1,0 +1,85 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/detail_margin"
+    android:orientation="vertical"
+    tools:context="cz.ich.newyorktimes.ArticleDetailFragment">
+
+    <!-- Publication date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_date"/>
+        <TextView
+            android:id="@+id/detail_pub_date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Lead paragraph -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_lead_paragraph"/>
+        <TextView
+            android:id="@+id/detail_lead_paragraph"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Source -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_source"/>
+        <TextView
+            android:id="@+id/detail_source"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Keywords -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/detail_label_width"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_keywords"/>
+        <TextView
+            android:id="@+id/detail_keywords"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Detail image -->
+    <ImageView
+        android:id="@+id/detail_image"
+        android:contentDescription="@string/detail_image_description"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/detail_margin"
+        />
+
+</LinearLayout>
+

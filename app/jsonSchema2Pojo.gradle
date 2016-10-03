@@ -1,0 +1,34 @@
+// Configuration for json -> objects generator
+jsonSchema2Pojo {
+    generateBuilders = false
+    usePrimitives = false
+
+    // Location of JSON (downloaded temporarily for objects generation)
+    source = files("articlesearch.json")
+
+    // package
+    targetPackage = 'cz.ich.newyorktimes.pojo'
+
+    propertyWordDelimiters = [] as char[]
+    useLongIntegers = false
+    useBigIntegers = false
+    useDoubleNumbers = true
+    useBigDecimals = false
+    includeHashcodeAndEquals = true
+    includeToString = true
+    annotationStyle = 'jackson2'
+    customAnnotator = 'org.jsonschema2pojo.NoopAnnotator'
+    includeJsr303Annotations = false
+    sourceType = 'json'
+    removeOldOutput = false
+    outputEncoding = 'UTF-8'
+    useJodaDates = false
+    useCommonsLang3 = false
+    initializeCollections = true
+    classNamePrefix = ""
+    classNameSuffix = ""
+    fileExtensions = [] as String[]
+    includeConstructors = true
+    parcelable = false
+    serializable = false
+}

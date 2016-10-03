@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">New York Times</string>
+
+    <!-- URLS -->
+    <string name="base_api_url">http://api.nytimes.com</string>
+    <string name="base_url">http://www.nytimes.com/</string>
+
+    <!-- List -->
+    <string name="thumbnail_description">Thumbnail</string>
+
+    <!-- Detail -->
+    <string name="detail_date">Publication date</string>
+    <string name="detail_lead_paragraph">Lead paragraph</string>
+    <string name="detail_source">Source</string>
+    <string name="detail_keywords">Keywords</string>
+    <string name="detail_image_description">Detail image</string>
+    <string name="detail_share">Share</string>
+
+    <!-- Errors -->
+    <string name="error_message">Error occured while processing New York Times articles.</string>
+</resources>

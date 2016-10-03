@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:baselineAligned="false"
+              android:divider="@drawable/master_detail_divider"
+              android:orientation="horizontal"
+              android:showDividers="middle"
+              tools:context="cz.ich.newyorktimes.ArticleListActivity">
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                                            xmlns:tools="http://schemas.android.com/tools"
+                                            android:id="@+id/article_list"
+                                            android:name="cz.ich.newyorktimes.ArticleListFragment"
+                                            android:layout_width="@dimen/item_width"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginLeft="@dimen/list_layout_margin_side"
+                                            android:layout_marginRight="@dimen/list_layout_margin_side"
+                                            app:layoutManager="LinearLayoutManager"
+                                            tools:context="cz.ich.newyorktimes.ArticleListActivity"
+                                            tools:listitem="@layout/article_list_item"/>
+
+    <FrameLayout
+        android:id="@+id/article_detail_container"
+        tools:ignore="InconsistentLayout"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"/>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cz.ich.newyorktimes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ArticleListActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ArticleDetailActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".ArticleListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="cz.ich.newyorktimes.ArticleListActivity"/>
+        </activity>
+
+        <service android:name=".service.ArticleSearchIntentService"
+                 android:enabled="true" />
+
+        <provider
+            android:name=".provider.NyTimesContentProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"/>
+
+        <meta-data android:name="cz.ich.newyorktimes.GlideConfiguration"
+                   android:value="GlideModule"/>
+    </application>
+
+</manifest>

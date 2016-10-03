@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_width">400dp</dimen>
+    <dimen name="text_margin">5dp</dimen>
+    <dimen name="list_layout_margin_side">5dp</dimen>
+    <dimen name="title_font_size">25sp</dimen>
+
+    <!-- Detail -->
+    <dimen name="detail_label_width">120dp</dimen>
+    <dimen name="detail_margin">10dp</dimen>
+
+</resources>
