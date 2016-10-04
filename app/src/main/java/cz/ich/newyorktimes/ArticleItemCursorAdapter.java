@@ -119,6 +119,7 @@ public class ArticleItemCursorAdapter extends RecyclerView.Adapter<ArticleItemCu
             Glide.clear(thumbnailView);
             thumbnailView.setVisibility(View.GONE);
         } else {
+            thumbnailView.setVisibility(View.VISIBLE);
             final String imageUrl = mBaseUrl + thumbnailUrl;
             Glide.with(mContext)
                     .load(imageUrl)
